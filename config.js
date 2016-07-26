@@ -38,11 +38,15 @@ var config = {
   blockchainExplorerOpts: {
     livenet: {
       provider: 'insight',
-      url: 'https://insight.bitpay.com:443',
+      //url: 'https://insight.bitpay.com:443',
+      url: 'http://blockbtc.altaapps.io:3001',  // Alta BTC livenet
+      apiPrefix: '/insight-api'
     },
     testnet: {
       provider: 'insight',
-      url: 'https://test-insight.bitpay.com:443',
+      //url: 'https://test-insight.bitpay.com:443',
+      url: 'http://139.162.8.80:3002',  // Alta BTC testnet
+      apiPrefix: '/api',
       // url: 'http://localhost:3001',
       // Multiple servers (in priority order)
       // url: ['http://a.b.c', 'https://test-insight.bitpay.com:443'],
